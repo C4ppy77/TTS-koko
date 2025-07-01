@@ -5,7 +5,8 @@ FROM python:3.9-slim-bookworm
 
 # Set environment variables for non-interactive apt-get operations
 ENV DEBIAN_FRONTEND=noninteractive
-ENV PYTHONIOENCODING=UTF-8 # Often helpful for ensuring text processing works correctly
+# Often helpful for ensuring text processing works correctly
+ENV PYTHONIOENCODING=UTF-8
 
 # Set the working directory in the container.
 # All subsequent commands will run from this directory.
