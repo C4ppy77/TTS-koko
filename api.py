@@ -3,6 +3,7 @@ import io
 import wave
 import numpy as np
 import logging
+from flask_cors import CORS
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -40,6 +41,7 @@ except Exception as e:
 
 
 app = Flask(__name__)
+CORS(app)
 
 @app.route('/synthesize', methods=['POST'])
 def synthesize_audio():

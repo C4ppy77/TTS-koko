@@ -1,5 +1,6 @@
 kokoro
 Flask
+flask-cors
 gunicorn
 numpy
 # {{change 1}}

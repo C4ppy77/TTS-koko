@@ -36,7 +36,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 # We assume 'en_core_web_sm' is the model misaki/kokoro expects.
 # If this still fails, you might need to consult misaki/kokoro documentation
 # or source code to determine the exact required spaCy model name.
-RUN python -m spacy download en_core_web_sm --no-cache --quiet
+RUN python -m spacy download en_core_web_sm --direct
 
 # Expose the port the application will listen on.
 EXPOSE 5000
